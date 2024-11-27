@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body><div id="maincontainer">
+        <div class="container">
+            <h1>Choose Your Product</h1>
+    
+            <div class="collapsible">
+                <button class="toggle" id="cosmetic">cosmetic</button>
+                <div class="content">
+                    <select onchange="showPrice(this, 'priceDisplayA','cos')">
+                        <option value="">--Select an Item--</option>
+                        <option value="1000" data-images="kajal.jpg">kajal - $1000</option>
+                        <option value="1500" data-images="lipstick.webp">lipstick - $1500</option>
+                        <option value="2000" data-images="eyeshadow.jpeg">eyeshadow - $2000</option>
+                    </select>
+                    <div id="priceDisplayA" class="price">
+                       
+                    </div>
+                    <div class="addcart"id="cos"></div>
+                  
+                   
+                </div>
+            </div>
+    
+            <div class="collapsible">
+                <button class="toggle" id="footwear">footwear</button>
+                <div class="content">
+                    <select onchange="showPrice(this, 'priceDisplayB','foot')">
+                        <option value="">--Select an Item--</option>
+                        <option value="1200" data-images="shoe.avif">shoe - $1200</option>
+                        <option value="1700" data-images="saddle.jpeg">saddle shoe - $1700</option>
+                        <option value="2200" data-images="slidesandal.webp">slide sandals- $2200</option>
+                    </select>
+                    <div id="priceDisplayB" class="price"></div>
+                    <div class="addcart"id="foot"></div>
+                </div>
+            </div>
+    
+            <div class="collapsible">
+                <button class="toggle"id="skin">skin</button>
+                <div class="content">
+                    <select onchange="showPrice(this, 'priceDisplayC','sk')">
+                        <option value="">--Select an Item--</option>
+                        <option value="800" data-images="cleansing.jpeg">cleansing - $800</option>
+                        <option value="1350" data-images="toning.webp">toning - $1350</option>
+                        <option value="1850" data-images="sunscreen.webp">sunscreen - $1850</option>
+                    </select>
+                    <div id="priceDisplayC" class="price"></div>
+                    <div class="addcart" id="sk"></div>
+                    
+                </div>
+            </div>
+    
+            <div class="collapsible">
+                <button class="toggle"id="clothing">clothing</button>
+                <div class="content">
+                    <select onchange="showPrice(this, 'priceDisplayD','cl')">
+                        <option value="">--Select an Item--</option>
+                        <option value="950" data-images="tshirt.jpeg">T-shirt - $950</option>
+                        <option value="1400"data-images="tanktop.webp">Tank Top- $1400</option>
+                        <option value="1900"data-images="jeans.webp">Jeans- $1900</option>
+                    </select>
+                    <div id="priceDisplayD" class="price"></div>
+                    <div class="addcart" id="cl"></div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <div id="showimages" class="image-container"></div>
+        
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
